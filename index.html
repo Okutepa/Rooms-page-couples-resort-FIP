@@ -1,159 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Rooms</title>
-</head>
-<body>
-    <header>
-        <img src="" alt="">
-        <nav id="main-nav">
-            <ul>
-                <li>Home</li>
-                <li>Rooms</li>
-                <li>packages</li>
-                <li>Dining</li>
-                <li>Spa Activities</li>
-                <li>Reservations</li>
-            </ul>
-        </nav>
-        <button>RESERVE</button>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap"
+      rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/d0e8431583.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <title>Welcome to The Couples Resort</title>
+  </head>
+  <body>
+    <h1 class="hidden">Welcome to The Couples Resort</h1>
+    <!-- Main Nav -->
+    <header class="grid-con" id="main-header">
+      <nav id="main-nav" class="col-span-full">
+        <h2 class="hidden">Main Navigation</h2>
+        <input type="checkbox" id="hamburger">
+        <label for="hamburger">
+          <img src="img/burger.svg" alt="hamburger menu icon">
+        </label>
+        <div id="burger-con">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Rooms</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">Dining</a></li>
+            <li><a href="#">Spa Activites</a></li>
+            <li><a href="#">Reservations</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="logo" class="col-span-full">
+        <img src="img/couples_resort_logo.svg" alt="Couples Resort Logo">
+      </div>
     </header>
-    <main>
-        <section>
-        <img src="" alt="">
-        <h1>ROOMS</h1>
-        <p>
-            At our Couples Resort, we’ve designed your stay to feel 
-            like a cherished journey into nature’s embrace. Each of 
-            our spacious accommodations is a blend of rustic charm 
-            and contemporary allure, curated by top designers and enriched 
-            by our owner’s collection of fine art. Your Wilderness escape 
-            begins with the promise of cozy intimacy and a touch of adventure.
-        </p>
-        <button>VIEW AMENITIES</button>
-        </section>
-        <section>
-            <img src="" alt="">
-            <h2>CHATEAUS</h2>
-            <p>
-                Discover Old European Charm with Private Gazebos, 
-                Balconies, and Outdoor Hot Tubs, all  with Scenic 
-                Lake and Forest Views
-            </p>
-            <button>VIEW DETAILS</button>
-        </section>
+    <!-- Main Page -->
+    <section id="hero" class="grid-con">
+      <h2 class="hidden">Book a stay with us</h2>
+      <div id="book-now-hero" class="book-now col-start-3 col-span-2">
+        <p>Book Now</p>
+      </div>
 
-        <section>
-                <img src="" alt="">
-                <h2>VILLAS</h2>
-                <p>
-                    Our Boutique Spa Villas offer an intimate 
-                    escape—Outdoor Hot Tub, Whirlpool, Sauna, Steam 
-                    Room—all curated with Old European Elegance by 
-                    'The Art Shoppe.' Your perfect getaway awaits you!
-                </p>
-                <button>VIEW DETAILS</button>
-        </section>
-
-        <section>
-            <img src="" alt="">
-            <h2>EXOTICS</h2>
-            <p>
-                Embark on adventure with our HOT TUB EXOTIC Jr. SUITES! 
-                Indulge in wet delights, spacious exotic vibes,and a touch 
-                of Africa.
-            </p>
-            <button>VIEW DETAILS</button>
-        </section>
-
-        <section>
-            <img src="" alt="">
-            <h2>MASTERS</h2>
-            <p>
-                Immerse in Algonquin Park's magic. Enjoy an Outdoor Hot Tub, 
-                a romantic Master's Jr Suite with water indulgences like a Whirlpool, 
-                Steam Room, and 4 Shower Heads. Your haven in Muskoka awaits!
-            </p>
-            <button>VIEW DETAILS</button>
+      <section id="hero-heading-box" class="col-span-full">
+        <h2 class="hero-img-h2">
+          <span>Couples Resort</span><br>
+          Room Styles
+        </h2>
+      </section>
     </section>
 
-    <section>
-        <img src="" alt="">
-        <h2>CHALETS</h2>
-        <p>
-            Algonquin Rustic Luxury Chalets: Lakefront,  
-            dark cedar finish, private hot tubs.  
-            Experience Canadian Cabins with indoor  
-            Whirlpool and outdoor Hot Tub. Embrace  
-            the seasons on the sun deck or  
-            winter ice skating
-        </p>
-        <button>VIEW DETAILS</button>
-    </section>
+    <div class="grid-con">
+      <section id="hero-summary" class="col-span-full line-separator">
+        <h2 class="hidden">Summary of our Facilities</h2>
+        <p>All Room Prices Include Daily 5 Course Dinner And Breakfast</p>
+        <div class="amenities-button col-span-full">View Room Amenities</div>
+      </section>
+    </div>
 
-    <section>
-        <img src="" alt="">
-        <h2>JUNIORS</h2>
-        <p>
-            Indulge yourself in the large double in-room  
-            Whirlpool Bath Tub while having a romantic  
-            evening by your own crackling wood burning fire.   
-            You will sleep well with a luxury king bed by  
-            designer Marshall Mattress.   
-            Stream Netflix on the 50" Tv in your room.
-        </p>
-        <button>VIEW DETAILS</button>
+    <section id="rooms-page-1" class="grid-con">
+      <h2 class="hidden">welcome</h2>
+      <section id="room-style-heading-1" class="col-start-1 col-span-2">
+        <h2 class="rooms-style-h2">
+          <span>Room Styles</span><br>
+          Chateaus
+        </h2>
+      </section>
     </section>
+    <section class="grid-con">
+      <h2 class="hidden">welcome</h2>
+      <div class="col-start-1 col-end-5">
+        <ul>
+          <li>1400 sq feet</li>
+          <li>Private Out Door Hot Tubs</li>
+          <li>FREE Illy Espresso / Americano Machine with Caps</li>
+          <li>FREE Soapstone products (Bath and Body) in room</li>
+          <li>FREE Illy Espresso / Americano Machine with Caps</li>
+          <li>
+            Steam Generator for the double shower , 4 shower heads & benches
+          </li>
+          <li>Bidet</li>
+          <li>Microwave</li>
+        </ul>
+      </div>
+    </section>
+    <div class="grid-con line-separator"></div>
 
-    <section>
-        <img src="" alt="">
-        <h3>HELIPCOPTER RIDES TO RESORT <br>
-            FROM ALL AIRPORT IN ONTARIO.
-        </h3>
-    </section>
+    <br>
 
-    <section>
-        <p>
-            "I first came across the Couples Resort website  
-            when I was looking for some weekend getaway  
-            ideas in the summer. A few years back my mom,  
-            grandma and I went away for the weekend to a  
-            Muskoka resort that was an adult-only property.  
-            While we all love kids, we found the atmosphere  
-            different then our typical vacation stays and  
-            quite enjoyed it"
-        </p>
-        <a href="">Read More</a>
+    <section id="rooms-page-2" class="grid-con">
+      <h2 class="hidden">welcome</h2>
+      <section id="room-style-heading-2" class="col-start-1 col-span-2">
+        <h2 class="rooms-style-h2">
+          <span>Room Styles</span><br>
+          Villas
+        </h2>
+      </section>
     </section>
-    </main>
-    <footer>
+    <h2 class="hidden">welcome</h2>
+    <section class="grid-con">
+      <h2 class="hidden">welcome</h2>
+      <div class="col-start-1 col-end-5">
+        <ul>
+          <li>1000 sq feet</li>
+          <li>Private Out Door Hot Tubs</li>
+          <li>Private Sauna</li>
+          <li>Free Illy Espresso / Americano Machine with Caps</li>
+          <li>
+            Steam Generator for the double shower , 4 shower heads & benches
+          </li>
+          <li>Bidet</li>
+          <li>Microwave</li>
+        </ul>
+      </div>
+    </section>
+    <div class="grid-con line-separator"></div>
+
+    <br>
+
+    <section id="rooms-page-3" class="grid-con">
+      <h2 class="hidden">welcome</h2>
+      <section id="room-style-heading-3" class="col-start-1 col-span-2">
+        <h2 class="rooms-style-h2">
+          <span>Room Styles</span><br>
+          Masters
+        </h2>
+      </section>
+    </section>
+    <section class="grid-con">
+      <h2 class="hidden">welcome</h2>
+      <div class="col-start-1 col-end-5">
+        <ul>
+          <li>1000 sq feet</li>
+          <li>Private Out Door Hot Tubs</li>
+          <li>Private Sauna</li>
+          <li>
+            Steam Generator for the double shower , 4 shower heads & benches
+          </li>
+          <li>Bidet</li>
+          <li>Microwave</li>
+        </ul>
+      </div>
+    </section>
+    <div class="grid-con line-separator"></div>
+
+    <br>
+
+    <section id="rooms-page-4" class="grid-con">
+      <h2 class="hidden">welcome</h2>
+      <section id="room-style-heading-4" class="col-start-1 col-span-2">
+        <h2 class="rooms-style-h2">
+          <span>Room Styles</span><br>
+          Chalets
+        </h2>
+      </section>
+    </section>
+    <section class="grid-con">
+      <h2 class="hidden">welcome</h2>
+      <div class="col-start-1 col-end-5">
+        <ul>
+          <li>1000 sq feet</li>
+          <li>Private Out Door Hot Tubs</li>
+          <li>Private Sauna</li>
+          <li>
+            Free Illy Espresso / Americano Machine with Caps
+          </li>
+          <li>
+            Free Room Basket of lotions, bath salts, specialty products
+          </li>
+          <li>
+            Free Soapstone products (Bath and Body) in room.
+          </li>
+          <li>
+            Steam Generator for the double shower , 4 shower heads & benches
+          </li>
+          <li>Bidet</li>
+          <li>Microwave</li>
+        </ul>
+      </div>
+    </section>
+    <div class="grid-con line-separator"></div>
+
+    <br>
+
+    <section id="rooms-page-5" class="grid-con">
+      <h2 class="hidden">welcome</h2>
+      <section id="room-style-heading-5" class="col-start-1 col-span-2">
+        <h2 class="rooms-style-h2">
+          <span>Room Styles</span><br>
+          Juniors
+        </h2>
+      </section>
+    </section>
+    <section class="grid-con">
+      <h2 class="hidden">welcome</h2> 
+      <div class="col-start-1 col-end-5">
+        <ul>
+          <li>600 sq feet</li>
+          <li>Private Out Door Hot Tubs</li>
+          <li>Microwave</li>
+        </ul>
+      </div>
+    </section>
+    <div class="grid-con line-separator"></div>
+
+
+    <footer id="footer-hero" class="grid-con">
+      <section id="footer-contact-info" class="col-start-1 col-end-5">
         <h3>Couples Resort</h3>
         <p>
-            1198 Osprey Rd, (End of) <br>
-            Minden, Soyers Lake, ON <br>
-            K0M 2K0 <br>
-            Toll Free:+1 877 201-1156 <br>
-            FAX:+1 613 638 2217 <br>
-            E-mail: info@coupleresort.com
+          1198 Osprey Rd, (End of)<br>
+          Minden, Soyers Lake, ON, <br>
+          K0M 2K0
         </p>
-        <nav id="footer-nav">
-            <ul>
-                <li>Home</li>
-                <li>Rooms</li>
-                <li>packages</li>
-                <li>Dining</li>
-                <li>Spa Activities</li>
-                <li>Reservations</li>
-            </ul>
-        </nav>
-        <button>Reserve</button>
-        <p>All prices and services on this website and in our reservation 
-            system are based on conditions at the time of publishing and 
-            are subject to change. Please call to confirm services, 
-            availability and pricing. ©2013 Couples Resort Inc. All Rights Reserved. Privacy policy</p>
+        <p>
+          Toll Free:+1 877 201-1156<br>
+          FAX:+1 613 638 2217<br>
+          E-mail: info@coupleresort.com
+        </p>
+      </section>
+      <div id="footer-privacy" class="col-start-1 col-end-5 line-separator">
+        <p id="price-policy">
+          All prices and services on this website and in our reservation system
+          are based on conditions at the time of publishing and are subject to
+          change. Please call to confirm services, availability and pricing.
+          ©2013 Couples Resort Inc. All Rights Reserved. Privacy Policy
+        </p>
+      </div>
     </footer>
-</body>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
