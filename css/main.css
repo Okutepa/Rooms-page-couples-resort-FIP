@@ -3,59 +3,61 @@ Couples Resort Responsive Build
 4 column grid as per XD file
  */
 
-/* 
-    CSS Guide 
+ /* Couples Resort Responsive Build CSS Guide */
 
-    1.  General Styles
-    2.  Main Nav
-    3.  Main Hero Image
-    4.  Main Hero Image Contact
-    5.  Why Couples Resort
-    6.  About & FAQ
-    7.  Contact Form
-    8.  Footer 
+ /* 
+     1. General Styles
  */
+ 
+ /* Line Separators */
 
+.line-separator-rooms {
+   margin-top: 70px;
+   border-top: solid 3px #CF6666;
+   padding-top: 20px;
+/* Styles for room separator */
+}
 
- /* 1. ---General Styles--- */
+.line-separator-amen {
+   margin-top: 10px;
+   border-top: solid 3px #CF6666;
+   padding-top: 20px;
+/* Styles for amenities separator */
+}
 
+.line-separator-1 {
+   margin-top: 0;
+   border-top: solid 3px #CF6666;
+   padding-top: 20px;
+/* Styles for general separator 1 */
+}
+
+.line-separator {
+   margin-top: 15px;
+   border-top: solid 3px #CF6666;
+   padding-top: 20px;
+/* Styles for general separator */
+}
+
+.line-separator-2 {
+   margin-top: 20px;
+   border-top: solid 3px #CF6666;
+   padding-top: 20px;
+/* Styles for general separator 2 */
+}
 
 /* 3. ---Main Hero Image--- */
 
-#hero {
-   background: url(../img/hero-main.jpg) no-repeat;
-   height: 200px;
-}
-
-.book-now {
-   background-color: #9a2018;
-   color: #fff;
-   font-size: 16px;
-   transition: background-color 500ms linear;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-style: italic;
-   transition:all 0.3s ease;
-   cursor: pointer;
-}
-
-.book-now:hover {
-   background-color: rgb(196, 28, 28);
-}
-
-#book-now-hero {
-   height: 67px;
-}
-
 #hero-heading-box {
    align-self: end;
+/* Styles for the hero heading box */
 }
 
 .hero-img-h2, .hero-img-h3 {
    background: rgb(255, 255, 255);
    padding: 10px 15px;
    font-size: 14px;
+/* Styles for specific heading styles in the hero section */
 }
 
 .hero-img-h2 span,  .hero-img-h3 span {
@@ -63,16 +65,11 @@ Couples Resort Responsive Build
    font-size: 12px;
 }
 
-.line-separator {
-   margin-top: 20px;
-   border-top: solid 3px #CF6666;
-   padding-top: 20px;
-}
-
 #hero-summary p {
    font-size: 14px;
-   line-height: 22px;
+   line-height: 22px; /* Styles for font-awesome icons */
    margin-bottom: 20px;
+/* Styles for paragraphs in the hero section */
 }
 
 /* 4. ---Main Hero Image Contact--- */
@@ -82,6 +79,7 @@ Couples Resort Responsive Build
    color: #9a2018;
    margin: 0 auto;
    float: left;
+ /* Styles for font-awesome icons */
 }
 
 .fa-mobile-alt {
@@ -108,33 +106,34 @@ Couples Resort Responsive Build
     max-width: 382px;
  }
 
-.rooms-style-h2 span {
-    color: #9a2018;
-    font-size: 12px;
-}
- 
+/* Body and Text Styles */
 body {
    color: #626262;
    font-family: 'Sanchez', 'Times New Roman', serif;
+/* General text styles and body color */
 }
 
 a {
    text-decoration: none;
    transition: all .5s ease-in-out;
+/* Styles for anchor (link) */
 }
 
 input, textarea {
    display: block;
    margin: 0;
    padding: 0;
+/* Styles for input and textarea elements */
 }
 
 .cr-red {
    color: #9a2018;
+/* Custom red color class */
 }
 
 
-/* 2. ---Main Nav--- */
+
+/* Navigation Styles */
 
  #main-nav label img {
    width: 20px;
@@ -143,15 +142,13 @@ input, textarea {
    cursor: pointer;
    transition: all .5s ease;
    margin-bottom: 20px; 
+/* Styles for navigation label image */
 } 
 
 #main-nav input, #burger-con {
    display: none;
+/* Styles for navigation input and burger container */
 }
-
-
-/*   ~ sibling selector   */
-
 
 #main-nav input:checked ~ #burger-con {
    display: block;
@@ -165,6 +162,7 @@ input, textarea {
    list-style: none;
    padding: 0;
    margin: 0;
+/* Styles for navigation ul */
 }
 
 #main-nav ul li a {
@@ -176,6 +174,7 @@ input, textarea {
 
 #main-nav ul li {
    border-bottom: 1px solid #efefef;
+/* Styles for navigation list items */
 }
 
 #main-nav ul li:first-child {
@@ -190,121 +189,39 @@ input, textarea {
 #logo {
    margin-bottom: 20px;
    max-width: 382px;
+/* Styles for the logo */
 }
 
-/* Hero Section */
-
-#hero-dining {
-   background:url('../img/dining-images/hero-img.png') no-repeat;
+#hero {
+   background: url(../img/hero-main.jpg) no-repeat;
    height: 200px;
+}
+
+.book-now {
+   background-color: #9a2018;
+   color: #fff;
+   font-size: 16px;
+   transition: background-color 500ms linear;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-style: italic;
+   transition:all 0.3s ease;
+   cursor: pointer;
+/* Styles for the "Book Now" button */
+}
+
+#book-now-hero {
+   height: 67px;
+/* Styles for the "Book Now" button in the hero section */
 }
 
 .book-now:hover {
    background-color: rgb(196, 28, 28);
 }
 
-#book-now-hero {
-   height: 67px;
-}
-
-#hero-heading-box {
-   align-self: end;
-}
-
-.hero-img-h2 {
-   background-color: #ffffff;
-   padding: 10px 15px;
-   font-size: 14px;
-}
-
-.hero-img-h2 span {
-   color: #9a2018;
-   font-size: 12px;
-}
-
-#hero-summary p {
-   font-size: 10px;
-   line-height: 22px;
-   margin-bottom: 20px;
-   margin-top: 10px;
-}
-
-.line-separator-1 {
-   margin-top: 0;
-   border-top: solid 3px #CF6666;
-   padding-top: 20px;
-}
-
-#Amenities {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-}
-
-#Amenities h2 {
-   font-size: 10px;
-   margin-right: 50px;
-   margin-top: 0px;
-   margin-bottom: 5px;
-}
-
-#Amenities p {
-   font-size: 12px;
-   margin-top: 10px;
-   padding: 0px 10px;
-   border: 1px solid black;
-   margin-right: 40px;
-}
-
-#Amenities a{
-   text-decoration: none;
-   color: #9a2018;
-}
-
-.rooms {
-   margin-top: 15px;
-   height: 200px;
-}
-
-.rooms h2{
-   margin-top: 150px;
-}
-
-.rooms ul li {
-   font-size: 10px;
-}
-
-#chateaus {
-   background:url('../img/rooms-images/cheateau.png') no-repeat;
-   margin-bottom: 150px;
-}
-
-#villas{
-   background:url('../img/rooms-images/cheateau.png') no-repeat;
-}
-/* Menu Heading */
-
-#menu {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-#menu h2 {
-   margin-top: -10px;
-   margin-right: 50px;
-   margin-bottom: 10px;
-}
-
-
-
-/* Homepage */
-
-/* 5. ---Why Choose Us--- */
-
- #why-choose-us-nav {
+/*  5. Why Couples Resort */
+#why-choose-us-nav {
    padding-top: 20px;
 }
 
@@ -359,7 +276,7 @@ input, textarea {
    font-size: 12px;
 }
 
- #why-choose-us-bottom-nav {
+#why-choose-us-bottom-nav {
    background-color: #CF6666;
    padding: 10px;
    margin-top: 20px;
@@ -381,7 +298,7 @@ input, textarea {
    color: #fff;
 }
 
-/* 6. ---About & FAQ--- */
+/* About & FAQ*/
 
 #about-hero-con {
    background: url(../img/about-us-hero.jpg) no-repeat;
@@ -502,8 +419,6 @@ input, textarea {
    height: 250px;
 }
 
-
-
 #contact-hero-form input[type="submit"] {
    padding: 12px 28px;
    background: #9a2018;
@@ -515,10 +430,261 @@ input, textarea {
 }
 
 #contact-hero-form input[type="submit"]:hover {
-   background-color: #626262;
-   border-radius: 0;
+   background-color: #9a2018;
+   border-radius: 5px;
+   animation: pulse 1s infinite;
 }
 
+@keyframes pulse {
+   0% {
+     transform: scale(1);
+   }
+   50% {
+     transform: scale(1.1);
+   }
+   100% {
+     transform: scale(1);
+   }
+ }
+
+#consent {
+   display: flex;
+   align-items: center;
+   margin-top: -50px;
+}
+
+#consent input {
+   margin-right: 8px;
+   margin-top: 29px;
+}
+
+#consent label {
+   font-size: 12px;
+   color: #000000;
+}
+
+#consent [type="checkbox"]{
+   opacity: 0;
+}
+
+#consent [type="checkbox"] + label {
+   position: relative;
+   padding-left: 20px;
+   cursor: pointer;
+   display: inline-block;
+   margin-top: 10px;
+}
+
+#consent [type="checkbox"] + label::after {
+   content: '';
+   position: absolute;
+   width: 15px;
+   height: 15px;
+   outline: 2px solid #CF6666;
+   left: -15px;
+   top: 2px;
+   border-radius: 50%;
+}
+
+#consent [type="checkbox"]:checked + label::after {
+   content: '';
+   position: absolute;
+   width: 15px;
+   height: 15px;
+   outline: 2px solid #6fcf66;
+   left: -15px;
+   top: 2px;
+   border-radius: 50%;
+   background-image: url('../img/checkmark.png');
+   background-size: contain;
+}
+
+/* Dining Page */
+#dining {
+   background:url('../img/dining-images/dining-room.png') no-repeat;
+   height: 200px;
+}
+
+.dining-box {
+   align-self: end;
+}
+
+.line-separator-2 {
+   margin-top: 20px;
+   border-top: solid 3px #CF6666;
+   padding-top: 20px;
+}
+
+/* Gourmet Section / diningpage */
+
+#gourmet {
+   background:url('../img/dining-images/gourmet-dining.png') no-repeat;
+   height: 200px;
+}
+
+/* Patio Section / diningpage */
+
+#patio {
+   background:url('../img/dining-images/patio-services.png') no-repeat;
+   height: 200px;
+}
+
+/* Drinks Section / diningpage */
+
+#drinks {
+   background:url('../img/dining-images/drinks.png') no-repeat;
+   height: 200px;
+}
+
+/* Specials Heading / diningpage*/
+
+#specials {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#specials h2 {
+   margin-top: -10px;
+   margin-right: 50px;
+   margin-bottom: 10px;
+}
+
+
+/* Chef Ronnie Section / diningpage */
+
+#chef-ron-img {
+   background:url('../img/dining-images/Chefs-delight.png') no-repeat;
+   height: 200px;
+}
+
+#chef-ron h2 {
+   font-size: 20px;
+   font-weight: bold; 
+   margin-top: 10px;
+}
+
+#chef-ron p {
+   margin-top: 10px;
+   font-size: 12px;
+   line-height: 1.5;
+}
+
+/* Rooms Page */
+
+#hero-rooms{
+   background: url(../img/rooms-images/rooms.jpg) no-repeat;
+   height: 200px;
+}
+
+.rooms-style-h2 span {
+   color: #9a2018;
+   font-size: 12px;
+}
+
+#hero-dining {
+   background:url('../img/dining-images/hero-img.png') no-repeat;
+   height: 200px;
+}
+
+#Amenities {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+#Amenities h2 {
+   font-size: 10px;
+   margin-right: 50px;
+   margin-top: 0px;
+   margin-bottom: 5px;
+}
+
+#Amenities p {
+   font-size: 12px;
+   margin-top: 10px;
+   padding: 0px 10px;
+   border: 1px solid black;
+   margin-right: 40px;
+}
+
+#Amenities a{
+   text-decoration: none;
+   color: #9a2018;
+}
+
+.rooms {
+   margin-top: 15px;
+   height: 200px;
+}
+
+.rooms h2{
+   margin-top: 150px;
+}
+
+.rooms ul li {
+   font-size: 10px;
+   padding-bottom: 10px;
+}
+
+.rooms ul li::marker {
+   color: #9a2018;
+}
+
+.details-btn {
+   font-size: 12px;
+   padding-top: 3px;
+   border: 1px solid black;
+   margin-top: -45px;
+   margin-left: 264px;
+   height: 19px;
+   text-align: center;
+}
+
+.details-btn a {
+   color: black;
+}
+
+#chateaus {
+   background:url('../img/rooms-images/cheateau.png') no-repeat;
+   margin-bottom: 150px;
+}
+
+#villas {
+   background:url('../img/rooms-images/villa.png') no-repeat;
+   margin-bottom: 125px;
+}
+
+#masters {
+   background:url('../img/rooms-images/masters.png') no-repeat;
+   margin-bottom: 100px;
+}
+
+#chalet {
+   background:url('../img/rooms-images/chalet.png') no-repeat;
+   margin-bottom: 170px;
+}
+
+#juniors {
+   background:url('../img/rooms-images/Juniors.png') no-repeat;
+   margin-bottom: 30px;
+}
+
+/* Menu Heading */
+
+#menu {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#menu h2 {
+   margin-top: -10px;
+   margin-right: 50px;
+   margin-bottom: 10px;
+}
 
 /* 8. ---Footer--- */
 
@@ -549,75 +715,4 @@ input, textarea {
    margin-bottom: 20px;
    line-height: 18px;
    font-size: 11px;
-}
-
-/* Dining Section */
-#dining {
-   background:url('../img/dining-images/dining-room.png') no-repeat;
-   height: 200px;
-}
-
-.dining-box {
-   align-self: end;
-}
-
-.line-separator-2 {
-   margin-top: 20px;
-   border-top: solid 3px #CF6666;
-   padding-top: 20px;
-}
-
-/* Gourmet Section */
-
-#gourmet {
-   background:url('../img/dining-images/gourmet-dining.png') no-repeat;
-   height: 200px;
-}
-
-/* Patio Section */
-
-#patio {
-   background:url('../img/dining-images/patio-services.png') no-repeat;
-   height: 200px;
-}
-
-/* Drinks Section */
-
-#drinks {
-   background:url('../img/dining-images/drinks.png') no-repeat;
-   height: 200px;
-}
-
-/* Specials Heading */
-
-#specials {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-#specials h2 {
-   margin-top: -10px;
-   margin-right: 50px;
-   margin-bottom: 10px;
-}
-
-
-/* Chef Ronnie Section */
-
-#chef-ron-img {
-   background:url('../img/dining-images/Chefs-delight.png') no-repeat;
-   height: 200px;
-}
-
-#chef-ron h2 {
-   font-size: 20px;
-   font-weight: bold; 
-   margin-top: 10px;
-}
-
-#chef-ron p {
-   margin-top: 10px;
-   font-size: 12px;
-   line-height: 1.5;
 }
