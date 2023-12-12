@@ -573,7 +573,7 @@ input, textarea {
 /* Rooms Page */
 
 #hero-rooms{
-   background: url(../img/rooms-images/rooms.jpg) no-repeat;
+   background: url('../img/rooms-images/rooms.png') no-repeat;
    height: 200px;
 }
 
